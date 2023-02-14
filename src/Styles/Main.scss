@@ -3,6 +3,70 @@
 @import "Media";
 @import "AntDesignStyles";
 
-* {
+body {
   margin: 0;
+  background: #16181c !important;
+}
+
+.logo {
+  height: 60px;
+  background: url('../Static/Images/Logo.png') no-repeat left;
+  background-position-x: 15%;
+}
+
+.NavLayout {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  //padding-top: 50px;
+  margin: 50px 15% 0 15%;
+  justify-content: space-evenly;
+  background: #2b2f50;
+  border-radius: 10px !important;
+
+  button {
+    //padding: 20px !important;
+    height: 100px !important;
+    color: #fff;
+  }
+}
+
+.auth {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 20px;
+
+  button {
+    background: #2b2f50;
+    color: #fff;
+    display: flex;
+    justify-content: start;
+    gap: 20%;
+    width: 20%;
+    border-radius: 20px;
+    height: 45px;
+    align-items: center;
+
+    img {
+      width: 25px;
+      height: 25px;
+    }
+
+    &:hover {
+      color: white !important;
+    }
+  }
+}
+
+.ourPerm {
+
+  div {
+    position: relative;
+
+    img, span {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 }
