@@ -6,9 +6,9 @@ import SignInIcon from './Static/Images/signin.png';
 import SignUpIcon from './Static/Images/signUp.png';
 import {CheckOutlined} from '@ant-design/icons';
 import Ellipse from './Static/Images/Ellips.png';
+import {GiCheckMark} from "react-icons/gi";
 
 function App() {
-
     return (
         <Layout>
             <Layout>
@@ -34,17 +34,26 @@ function App() {
             </Layout>
             <section id={'AboutUs'}>
                 <div className={'ourPerm'}>
-                    <div key={'1'}>
-                        <div><img src={Ellipse} alt={'Ellipse'}/><CheckOutlined/></div>
-                        <div></div>
+                    <div key={'1'} className={'item'}>
+                        <div><img src={Ellipse} alt={'Ellipse'}/><GiCheckMark size={'30px'}/></div>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cum cupiditate impedit
+                            maxime possimus ratione, recusandae reprehenderit soluta! Asperiores aspernatur aut cum
+                            eveniet facilis, magnam minima quod recusandae veritatis voluptatem.
+                        </div>
                     </div>
-                    <div key={'2'}>
-                        <div><img src={Ellipse} alt={'Ellipse'}/><CheckOutlined/></div>
-                        <div></div>
+                    <div key={'2'} className={'item'}>
+                        <div><img src={Ellipse} alt={'Ellipse'}/><GiCheckMark size={'30px'}/></div>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate maxime officiis sint!
+                            Aliquid atque dicta eaque eligendi esse eum, iusto modi nam officia quibusdam, reiciendis
+                            soluta temporibus voluptatibus. Enim, optio!
+                        </div>
                     </div>
-                    <div key={'3'}>
-                        <div><img src={Ellipse} alt={'Ellipse'}/><CheckOutlined/></div>
-                        <div></div>
+                    <div key={'3'} className={'item'}>
+                        <div><img src={Ellipse} alt={'Ellipse'}/><GiCheckMark size={'30px'}/></div>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi blanditiis commodi
+                            cum dolorem, eaque eum fuga, in iste modi neque nulla quos similique soluta sunt totam ullam
+                            veritatis, voluptates!
+                        </div>
                     </div>
                 </div>
                 <div className={'information'}>

@@ -58,15 +58,32 @@ body {
   }
 }
 
-.ourPerm {
+#AboutUs {
+  min-height: 250px;
+  padding: 50px;
 
-  div {
-    position: relative;
+  .ourPerm {
+    display: grid;
+    gap: 20px;
 
-    img, span {
-      position: absolute;
-      top: 0;
-      left: 0;
+    .item {
+      display: grid;
+      grid-template-columns: 10% 88%;
+      gap: 20px;
+
+      div {
+        position: relative;
+      }
+
+      img {
+        position: absolute;
+      }
+
+      svg {
+        position: absolute;
+        top: 29%;
+        left: 10px;
+      }
     }
   }
 }
